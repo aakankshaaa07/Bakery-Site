@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bake My Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Geostar&family=Lato&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/Styles/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+</head>
+<body>
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" style="background-image: url(bannerimg2.jpg);">
+          <h1><em>bake my day</em></h1>
+          <div class="typed">
+          <script src="Script/typed.js"></script>
+          <span id="typed"></span>
+          <script>
+          var options = {
+            strings: ["we sell cakes", "we sell donuts", "we sell cookies", "we sell pies", "we sell pretzels", "we sell waffles", "we sell pancakes"],
+            typeSpeed: 40,
+            backSpeed: 40,
+            loop: true
+            }
+            var typed = new Typed("#typed", options);
+            </script>
+            </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(breakfastimg.jpg);">
+          <h1><em>breakfast</em></h1> <br>
+          <div class="text2">
+            We serve the best and fresh breakfast. <br> Start your day with our tummy-filling dishes.
+          </div>
+          <div class="btn2">
+            <button> view our menu </button>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(cakeimg.jpg);">
+          <h1><em>cakes</em></h1> <br>
+          <div class="text3">
+            You do not need any occasion to <br> treat yourself. <br> We offer delicious cakes.
+          </div>
+          <div class="btn3">
+            <button> cakes </button>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(breadimg.jpg);">
+          <h1><em>bread</em></h1> <br>
+          <div class="text4">
+            We are a hand-crafted bakery brand that uses <br> only the most authentic ingredients, <br> processes and love!
+          </div>
+          <div class="btn4">
+            <button> breads </button>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(fdbckimg.jpg);">
+          <form>
+            <h1> your feedback </h1> <hr>
+            <label for="name"> name: </label><br>
+            <input type="text" id="name" name="name"><br>
+            <br>
+            <label for="feedback">feedback: </label><br>
+            <input type="text" id="feedback" name="feedback"><br>
+            <br>
+            <button> submit </button>
+          </form>
+        </div>
+
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+     <div class="swiper-scrollbar"></div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'vertical',
+      
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        },
+        
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          },
+          
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+            },
+            })
+            </script>
+            </body>
+            </html>
